@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="query_seleector.css">
+</head>
+<body>
+  <nav class="block">
+    <p>Welcome to my website</p>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+  </nav>
+  <div class="block2">
+    <p>Welcome to my website</p>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+  </div>
+  <div class="section">
+    <h4>hey there i am <span id="user-name" class="color">Muhammad Zeeshan Zaheer</span></h4>
+    <p class="code-line">Here is code for you</p>
+    <pre><code>console.log("hello")</code></pre>
+
+  </div>
+  <script>
+    /*
+    we can select element using css in following ways
+    id
+    tag name
+    class name
+    */
+    // const body=document.querySelector("body")
+    // console.log(body);
+    // console.log(body.innerHTML);
+    // body.innerHTML="<h1>Hacked</h1>"
+    // console.log(body.innerHTML);
+    // let code=document.querySelector("pre code").innerHTML="alert('alert')"
+    // console.log(code)
+
+    // let text=document.querySelector("#user-name").innerHTML;
+    // console.log(text);
+
+    // const ele=document.querySelectorAll(".block");
+    // ele.forEach((element) => {
+    //   // console.log(element.innerHTML);
+    //   console.log(element.classList);
+    // });
+
+    // const element=document.getElementById("user-name");
+    // console.log(element.classList);
+    // element.classList.remove("color");
+    // element.style.color="blue"
+    // element.style.fontSize="2rem";
+    // element.style.fontWeight="bold";
+    // element.style.textDecoration="underline";
+    // element.style.textTransform="uppercase";
+    // element.style.backgroundColor="yellow";
+    // element.style.padding="10px";
+
+    const block2=document.getElementsByClassName("block2");
+    for(let i=0;i<block2.length;i++){
+      console.log(block2[i].innerHTML);
+    }
+
+  </script>
+</body>
+</html>
